@@ -1,0 +1,234 @@
+#register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+#register-header {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#register-header > .cancel,
+.done {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#register-header > .done {
+  color: rgba(41, 98, 255, 0.86);
+}
+
+#register-header > .context {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Container */
+#register-container {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  padding-bottom: 150px;
+
+  overflow: scroll;
+}
+
+#register-container > div {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+}
+
+/* Main */
+/* #register-main {
+  
+ 
+} */
+
+#register-feed {
+  padding: 15px;
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#register-feed > .feed-img {
+  width: 90px;
+  height: 90px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 5px;
+}
+
+#register-feed > .feed-img > label {
+  width: 100%;
+  height: 100%;
+}
+#register-feed > .feed-img > label > div {
+  width: 100%;
+  height: 100%;
+}
+
+#register-feed > .feed-img > label > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#register-feed > .feed-img > label > div > video {
+  width: 100%;
+  height: 100%;
+}
+
+#register-feed > .feed-content {
+  flex: 1 1;
+  height: 90px;
+  margin-left: 10px;
+}
+
+#register-feed > .feed-content > textarea {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+/* 태그하기 스타일 */
+#register-feed-tag {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#register-feed-tag > .feed-tag-input {
+  display: flex;
+  height: 24px;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#register-feed-tag > .feed-tag-input > input {
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+  border-radius: 5px;
+}
+
+#register-feed-tag > .feed-tag-input > span {
+  display: inline-block;
+  font-size: 18px;
+  color: rgba(1, 1, 1, 0.38);
+}
+
+#register-feed-tag > .feed-tag-input > input {
+  display: inline-block;
+  border: none;
+  padding: 0 5px;
+  margin-left: 5px;
+  flex: 1 1;
+}
+
+#register-feed-tag > .feed-tag-list {
+  align-items: center;
+  display: flex;
+  /* white-space: nowrap; */
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+#register-feed-tag > .feed-tag-list > div {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+  margin: 0 10px 10px 0;
+
+  background: rgba(41, 98, 255, 0.38);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 10px;
+}
+
+#register-feed-tag > .feed-tag-list > div > span {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+#register-today-exercise {
+  padding: 0px 15px 15px 15px;
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#register-today-exercise > div > div > div {
+  margin-bottom: 5px;
+}
+
+#register-today-exercise > div > div > div > input {
+  margin-right: 5px;
+}
+
+#register-today-exercise > div > div > div > label {
+  /* font-size: 13px; */
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* 736px 이상일 경우 적용되는 코드 */
+@media (min-width: 736px) {
+  #register-feed {
+    padding: 40px 15px 40px 15px;
+  }
+
+  #register-feed-tag > .feed-tag-input {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  #register-feed-tag > .feed-tag-list > div {
+    margin: 0 15px 15px 0;
+  }
+}
+
+/* 1024px 이상일 경우 적용되는 코드 */
+@media (min-width: 1024px) {
+  #register-feed {
+    padding: 60px 15px 60px 15px;
+  }
+
+  #register-feed-tag > .feed-tag-input {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,23 @@
+/* #admin-feeds-line {
+  height:36px; 
+  background-color: rgb(245, 245, 245);
+}
+
+
+#profile-feed-list {
+  margin: 2px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 1px 1px;
+}
+
+#profile-feed-list > .feed {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1;
+}
+
+#profile-feed-list > .feed > img {
+  width: 100%;
+  height: 100%;
+} */

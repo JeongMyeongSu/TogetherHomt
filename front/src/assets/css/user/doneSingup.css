@@ -1,0 +1,38 @@
+/* 회원가입 완료 */
+.user#donesignup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user#donesignup > svg {
+  margin-bottom: 50px;
+}
+
+.user#donesignup > h1 {
+  font-family: 'Gugi';
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 15px;
+}
+
+.user#donesignup > div {
+  font-size: 15px;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 736px) {
+  .user#donesignup > svg {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .user#donesignup > h1 {
+    font-size: 70px;
+  }
+
+  .user#donesignup > div {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+}

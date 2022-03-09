@@ -1,0 +1,191 @@
+#feed {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+#feed > .th-post {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  padding-bottom: 120px;
+
+  overflow: scroll;
+}
+
+#feed > .th-post > .print {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+
+  margin-bottom: 30px;
+}
+
+/* 사용자 프로필 */
+#feed > .th-post > .print > .header-level {
+  display: flex;
+  height: 50px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#feed > .th-post > .print > .header-level > div {
+  display: flex;
+  align-items: center;
+}
+
+#feed > .th-post > .print > .header-level > div > #img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#feed > .th-post > .print > .header-level > div > #img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#feed > .th-post > .print > .header-level > div > #usrnm {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 피드 이미지 */
+#feed > .th-post > .print > .feed-image {
+  width: 100%;
+}
+
+#feed > .th-post > .print > .feed-image > .feed-image-container {
+  width: 100%;
+}
+
+#feed > .th-post > .print > .feed-image > .feed-image-container > img {
+  width: 100%;
+}
+
+#feed > .th-post > .print > .feed-image > .feed-image-container > video {
+  width: 100%;
+}
+
+/* 피드 메뉴바 좋아요, 댓글 */
+#feed > .th-post > .print > .feed-detail-menu {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 10px;
+}
+
+#feed > .th-post > .print > .feed-detail-menu > div {
+  height: 24px;
+  width: 24px;
+  margin-right: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* 피드 내용 - 좋아요 개수, 피드 내용, 댓글 */
+#feed > .th-post > .print > .feed-detail-content {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* 좋아요 */
+#feed > .th-post > .print > .feed-detail-content > div:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 닉네임 내용 */
+#feed > .th-post > .print > .feed-detail-content > div:nth-child(2) {
+  display: flex;
+}
+
+#feed > .th-post > .print > .feed-detail-content > div:nth-child(2) > div {
+  margin-right: 5px;
+}
+
+#feed
+  > .th-post
+  > .print
+  > .feed-detail-content
+  > div:nth-child(2)
+  > div:nth-child(2)
+  > span {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+/* 댓글 */
+#feed > .th-post > .print > .feed-detail-content > div:nth-child(3) {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+/* 피드 게시 날짜 */
+#feed > .th-post > .print > .feed-detail-date {
+  padding: 10px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+/* 736px 이상일 경우 적용되는 코드 */
+@media (min-width: 736px) {
+  #feed > .th-post {
+    padding-top: 32px;
+  }
+
+  #feed > .th-post > .print > .header-level {
+    height: 70px;
+  }
+
+  #feed > .th-post > .print > .feed-detail-menu {
+    height: 50px;
+  }
+
+  #feed > .th-post > .print > .feed-detail-content > div:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  #feed > .th-post > .print > .feed-detail-date {
+    margin-top: 6px;
+  }
+}
+
+/* 1024px 이상일 경우 적용되는 코드 */
+@media (min-width: 1024px) {
+  #feed > .th-post > .print > .header-level {
+    height: 80px;
+  }
+
+  #feed > .th-post > .print > .header-level > div > #img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #feed > .th-post > .print > .feed-detail-menu {
+    height: 56px;
+  }
+
+  #feed > .th-post > .print > .feed-detail-content > div:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 22px;
+  }
+
+  #feed > .th-post > .print > .feed-detail-date {
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,142 @@
+$radius: 50px;
+
+.motion-detect {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #exercise-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    > div {
+      cursor: pointer;
+    }
+
+    .back-btn {
+      width: 42px;
+    }
+
+    .exercise-title {
+      font-size: 25px;
+      font-weight: 600;
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    
+
+    .fail-btn {
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .success-btn {
+      border: none;
+      font-size: 16px;
+      color: #42A5F5;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+  }
+
+  #canvas-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #canvas {
+    width: 50%;
+    min-width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  #predict-value {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  progress {
+    margin-left: -30px;
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-progress-bar {
+    // background-color: #e7e7e7;
+    border-radius: 30px;
+    height: 25px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    // border: 1px solid rgba(255, 255, 255, 0.18);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  ::-webkit-progress-value {
+    background-color: #42a4f5d2;
+    border-radius: 30px;
+    height: 25px;
+    transition: 0.2s;
+  }
+
+  #exercise-gage {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 10px;
+  
+    
+    #label-container {
+      margin-top: 3px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media (min-width: 736px) {
+  .motion-detect {
+    #canvas {
+      margin-top: 40px;
+      width: 350px;
+      height: 470px;
+    }
+
+    #exercise-gage {
+    #label-container {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    #percent {
+      margin-top: 15px;
+    }
+  }
+  }
+}

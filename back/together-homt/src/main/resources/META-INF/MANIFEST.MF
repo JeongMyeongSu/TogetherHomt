@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: spring-boot-test-autoconfigure-2.6.2.jar spring-boot-starter
+ -mail-2.6.2.jar spring-boot-test-2.6.2.jar spring-boot-starter-logging-
+ 2.6.2.jar spring-core-5.3.14.jar jakarta.activation-1.2.2.jar spring-ao
+ p-5.3.14.jar jul-to-slf4j-1.7.32.jar junit-platform-commons-1.8.2.jar s
+ pring-boot-starter-test-2.6.2.jar spring-boot-starter-2.6.2.jar jakarta
+ .transaction-api-1.3.3.jar spring-data-commons-2.6.0.jar mysql-connecto
+ r-java-8.0.27.jar spring-jcl-5.3.14.jar jakarta.persistence-api-2.2.3.j
+ ar json-smart-2.4.7.jar classmate-1.5.1.jar junit-jupiter-5.8.2.jar spr
+ ing-boot-2.6.2.jar spring-boot-starter-security-2.6.2.jar spring-securi
+ ty-config-5.6.1.jar spring-context-5.3.14.jar log4j-to-slf4j-2.17.0.jar
+  junit-platform-engine-1.8.2.jar jakarta.xml.bind-api-2.3.3.jar tomcat-
+ embed-websocket-9.0.56.jar txw2-2.3.5.jar spring-jdbc-5.3.14.jar spring
+ -data-jpa-2.6.0.jar jakarta.activation-api-1.2.2.jar spring-security-we
+ b-5.6.1.jar objenesis-3.2.jar jackson-datatype-jdk8-2.13.1.jar jackson-
+ databind-2.13.1.jar spring-boot-starter-aop-2.6.2.jar mockito-junit-jup
+ iter-4.0.0.jar aspectjweaver-1.9.7.jar spring-security-core-5.6.1.jar l
+ og4j-api-2.17.0.jar antlr-2.7.7.jar snakeyaml-1.29.jar spring-boot-star
+ ter-jdbc-2.6.2.jar spring-boot-devtools-2.6.2.jar slf4j-api-1.7.32.jar 
+ jakarta.mail-1.6.7.jar spring-context-support-5.3.14.jar jackson-annota
+ tions-2.13.1.jar tomcat-embed-core-9.0.56.jar jakarta.validation-api-2.
+ 0.2.jar spring-webmvc-5.3.14.jar jackson-module-parameter-names-2.13.1.
+ jar jandex-2.2.3.Final.jar hibernate-commons-annotations-5.1.2.Final.ja
+ r spring-aspects-5.3.14.jar hibernate-core-5.6.3.Final.jar android-json
+ -0.0.20131108.vaadin1.jar xmlunit-core-2.8.4.jar junit-jupiter-engine-5
+ .8.2.jar h2-1.4.200.jar asm-9.1.jar istack-commons-runtime-3.0.12.jar a
+ ccessors-smart-2.4.7.jar jakarta.annotation-api-1.3.5.jar logback-core-
+ 1.2.9.jar spring-boot-starter-tomcat-2.6.2.jar spring-tx-5.3.14.jar ass
+ ertj-core-3.21.0.jar byte-buddy-agent-1.11.22.jar mockito-core-4.0.0.ja
+ r jackson-core-2.13.1.jar spring-expression-5.3.14.jar spring-orm-5.3.1
+ 4.jar HikariCP-4.0.3.jar spring-boot-autoconfigure-2.6.2.jar spring-sec
+ urity-test-5.6.1.jar spring-boot-starter-validation-2.6.2.jar junit-jup
+ iter-api-5.8.2.jar spring-security-crypto-5.6.1.jar json-path-2.6.0.jar
+  jaxb-runtime-2.3.5.jar tomcat-embed-el-9.0.56.jar spring-beans-5.3.14.
+ jar jsonassert-1.5.0.jar logback-classic-1.2.9.jar java-jwt-3.16.0.jar 
+ jboss-logging-3.4.2.Final.jar hibernate-validator-6.2.0.Final.jar sprin
+ g-web-5.3.14.jar spring-boot-starter-web-2.6.2.jar jackson-datatype-jsr
+ 310-2.13.1.jar opentest4j-1.2.0.jar junit-jupiter-params-5.8.2.jar spri
+ ng-test-5.3.14.jar hamcrest-2.2.jar spring-boot-starter-data-jpa-2.6.2.
+ jar spring-boot-starter-json-2.6.2.jar byte-buddy-1.11.22.jar
+

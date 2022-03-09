@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/* 회원가입 */
+.user#signup {
+  width: 80%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user#signup > #form-box {
+  width: 100%;
+  max-width: 340px;
+  min-width: 280px;
+  padding: 25px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+}
+
+.user#signup .input-with-label {
+  position: relative;
+}
+
+.user#signup .input-with-label label {
+  position: absolute;
+  left: 3px;
+  top: 12.5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.user#signup .input-with-label#short input[type="text"] {
+  padding: 5px 0 0 50px;
+}
+
+.user#signup .input-with-label input[type="text"] {
+  padding: 5px 0 0 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+
+.user#signup .send-confirmnum {
+  position: absolute;
+  left: 163px;
+  top: 11px;
+  width: 65px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user#signup .send-confirmnum > div {
+  width: 100%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 8px;
+  color: #42A5F5;
+}
+
+.user#signup .signup-input-data {
+  box-sizing: border-box;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom:1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.user#signup .signup-input-data:focus {
+  outline : none;
+  background-color: transparent;
+}
+
+.user#signup .input-with-label#password input[type="password"]{
+  padding: 5px 0 0 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.user#signup .input-with-label#password-confirm input[type="password"] {
+  padding: 5px 0 0 70px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.user#signup .checkbox {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+}
+
+.user#signup .checkbox > input{
+  width: 20px;
+}
+
+
+.user#signup #btn-status {
+  max-width: 250px;
+  width: 100%;
+}
+
+
+
+
+
+/* 736px 이상일 경우 적용되는 코드 */
+@media (min-width: 736px) {
+  .user #logo {
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+
+  .user#signup > #form-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    margin-bottom: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    
+  }
+
+  .user#signup .input-with-label label {
+    position: absolute;
+    left: 15px;
+    top: 12.5px;
+    font-size: 15px;
+  }
+  
+  .user#signup .input-with-label#short input[type="text"] {
+    padding: 5px 0 0 70px;
+  }
+  
+  .user#signup .input-with-label input[type="text"] {
+    padding: 3px 0 0 90px;
+    font-size: 15px;
+    line-height: 10px;
+  }
+
+
+  .user#signup .signup-input-data {
+    height: 45px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .user#signup .input-with-label#password input[type="password"]{
+    padding: 3px 0 0 85px;
+    font-size: 15px;
+  }
+  
+  .user#signup .input-with-label#password-confirm input[type="password"] {
+    padding: 3px 0 0 120px;
+    font-size: 15px;
+  }
+
+
+  .user#signup .send-confirmnum {
+    position: absolute;
+    left: 280px;
+    top: 11px;
+    width: 100px;
+    height: 25px;
+  }
+  
+  .user#signup .send-confirmnum > div {
+    font-size: 14.5px;
+  }
+
+  .user#signup .checkbox {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+  .user#signup .checkbox > input{
+    width: 30px;
+  }
+
+  .user#signup #btn-status {
+    max-width: 300px;
+  }
+}

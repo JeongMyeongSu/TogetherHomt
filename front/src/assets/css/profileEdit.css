@@ -1,0 +1,172 @@
+#profile-edit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ProfileEditHeader */
+#profile-edit-header {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#profile-edit-header > .cancel,
+.done {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#profile-edit-header > .done {
+  color: rgba(41, 98, 255, 0.86);
+}
+
+#profile-edit-header > .context {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* ProfileEditContainer */
+#profile-edit-container {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  padding-bottom: 150px;
+
+  overflow: scroll;
+}
+
+#profile-edit-container > div {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+}
+
+/* ProfileEditMain */
+#profile-edit-main {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 20px;
+}
+
+#profile-edit-main > .profile {
+  width: 100%;
+  height: 110px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(41, 98, 255, 0.86);
+}
+
+#profile-edit-main > .profile > .view {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#profile-edit-main > .profile > .view > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#profile-edit-main > .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+#profile-edit-main > .info > div {
+  padding: 8px 0;
+  width: 100%;
+}
+
+#profile-edit-main > .info > div > * {
+  margin: 3px 0;
+}
+
+#profile-edit-main > .info > div > span {
+  width: 80px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#profile-edit-main > .info > div > input,
+textarea {
+  font-size: 14px;
+  width: 100%;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 2px;
+}
+
+#profile-edit-main > .info > div > textarea {
+  line-height: 20px;
+  height: 100%;
+  white-space: pre-line;
+}
+
+/* ProfileEditFooter */
+#profile-edit-footer {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+#profile-edit-footer > div {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#profile-edit-footer > div > * {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.38);
+  margin-left: 10px;
+}
+
+/* 736px 이상일 경우 적용되는 코드 */
+@media (min-width: 736px) {
+}
+
+/* 1024px 이상일 경우 적용되는 코드 */
+@media (min-width: 1024px) {
+  #profile-edit-main > .profile {
+    height: 140px;
+  }
+
+  #profile-edit-main > .profile > .view {
+    width: 115px;
+    height: 115px;
+  }
+
+  #profile-edit-main > .info {
+    padding: 46px;
+  }
+
+  #profile-edit-footer {
+    padding: 16px 46px;
+  }
+}

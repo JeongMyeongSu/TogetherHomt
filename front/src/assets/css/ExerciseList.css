@@ -1,0 +1,131 @@
+#exercise-list {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  overflow: scroll;
+}
+
+/* ExerciselistHeader */
+#exercise-list-header {
+  background-color: #ffffff;
+  display: flex;
+  height: 40px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+}
+
+#exercise-list-header > .cancel {
+  height: 5px;
+  cursor: pointer;
+}
+
+#exercise-list-header > .cancel > .material-icons {
+  /* top: 20px; */
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+}
+
+#exercise-list-header > .context {
+  font-weight: bold;
+}
+
+/* ExerciseMenu */
+#exercise-list-menu {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+}
+#exercise-list-menu > div {
+  cursor: pointer;
+}
+
+/* ExerciseList */
+#exercise-list-main {
+  width: auto;
+  height: 300px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+}
+#exercise-list-main > div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+#exercise-list-main > div > span {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  font-size: 100%;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 5%;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px black;
+}
+#exercise-list-main > div > span:active {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  font-size: 100%;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 5%;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px black;
+}
+/* ExerciseListBasket Header */
+#exercise-list-basket-header {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+}
+/* ExerciseListBasket */
+#exercise-list-basket {
+  width: auto;
+  height: 300px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+}
+#exercise-list-basket > div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+#exercise-list-basket > div > span {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  font-size: 100%;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 5%;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px black;
+  /* inset */
+}

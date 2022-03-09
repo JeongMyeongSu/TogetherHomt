@@ -1,0 +1,267 @@
+#follow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+#follow > div {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  padding-bottom: 150px;
+
+  overflow: scroll;
+}
+
+#follow > div > div {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+}
+
+/* FollowHeader */
+#follow-header {
+  display: flex;
+  height: 40px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+#follow-header > .cancel {
+  height: 24px;
+}
+
+#follow-header > .cancel > span {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#follow-header > .context {
+  font-weight: bold;
+}
+
+/* FollowList */
+#follow-list {
+  width: 100%;
+  padding: 0 16px;
+}
+
+#follow-list > div {
+  height: 100%;
+  width: 100%;
+}
+
+#follow-list > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+
+  /* margin: 15px 0; */
+}
+
+#follow-list > div > div > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#follow-list > div > div > div > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 15px 0;
+}
+
+#follow-list > div > div > div > div > .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#follow-list > div > div > div > div > .profile > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#follow-list > div > div > div > div > .username {
+  margin-left: 10px;
+}
+
+#follow-list > div > div > div > div > .btn {
+  margin-left: auto;
+}
+
+#follow-list > div > div > div > div > .btn > .follow-btn {
+  padding: 4px 10px;
+
+  font-weight: bold;
+  border-radius: 5px;
+
+  background: rgba(41, 98, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(80px);
+  color: #ffffff;
+}
+
+#follow-list > div > div > div > div > .btn > .following-btn {
+  padding: 4px 10px;
+
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(80px);
+}
+
+/* 736px 이상일 경우 적용되는 코드 */
+@media (min-width: 736px) {
+  #follow-header {
+    margin-top: 16px;
+    padding: 0 32px;
+  }
+
+  #follow-list {
+    padding: 0 32px;
+  }
+
+  #follow-list > div > div > div > div {
+    margin: 20px 0;
+  }
+
+  #follow-list > div > div > div > div > .username {
+    margin-left: 15px;
+  }
+}
+
+/* 1024px 이상일 경우 적용되는 코드 */
+@media (min-width: 1024px) {
+  #follow-list > div > div > div > div > .profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  #follow-list > div > div > div > div > .btn > .follow-btn {
+    padding: 8px 16px;
+  }
+
+  #follow-list > div > div > div > div > .btn > .following-btn {
+    padding: 8px 16px;
+  }
+}
+
+/*
+#follow-list > div > div > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+#follow-list > div > div > .default > *:first-child {
+  margin-top: 25%;
+}
+
+#follow-list > div > div > .default > * {
+  margin-top: 5px;
+}
+
+#follow-list > div > div > .default > span {
+  font-size: 64px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#follow-list > div > div > .default > p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+#follow-list > div > div > .default > h4 {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#follow-list > div > div > .list {
+  width: 100%;
+  padding: 0 15px;
+  position: fixed;
+  top: 169px;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  overflow: scroll;
+}
+
+#follow-list > div > div > .list > .follow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 15px 0;
+}
+
+#follow-list > div > div > .list > .follow:first-child {
+  margin: 0;
+}
+
+#follow-list > div > div > .list > .follow > .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#follow-list > div > div > .list > .follow > .profile > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#follow-list > div > div > .list > .follow > .username {
+  margin-left: 10px;
+}
+
+#follow-list > div > div > .list > .follow > .btn {
+  margin-left: auto;
+}
+
+#follow-list > div > div > .list > .follow > .btn > .follow-btn {
+  padding: 4px 10px;
+  background-color: rgba(41, 98, 255, 0.87);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgba(41, 98, 255, 0.87);
+}
+
+#follow-list > div > div > .list > .follow > .btn > .following-btn {
+  padding: 4px 10px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+} */

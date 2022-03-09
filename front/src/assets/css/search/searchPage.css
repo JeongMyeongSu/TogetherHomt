@@ -1,0 +1,123 @@
+.search-page {
+  width: 100%;
+  height: 100%;
+  max-width: 850px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-page #search-bar-box {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.search-page #search-bar-box > #input-box {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  height: 32px;
+  /* justify-content: center; */
+}
+
+.search-page #search-bar-box .no-search-mode-input {
+  width: 90%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  transition-duration: 3s;
+}
+
+.search-page .search-mode-input {
+  position: relative;
+  width: 80%;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  transition-duration: 1s;
+}
+
+.search-page .search-mode-input::placeholder {
+  font-family: "Roboto";
+  font-size: 15px;
+}
+
+.search-page #btn-standard {
+  position: relative;
+}
+
+.search-page #btn-standard > button {
+  font-family: "Roboto";
+  position: absolute;
+  top: 6px;
+  left: -60px;
+  border: 0;
+  background-color: transparent;
+  -webkit-animation: fadein 3s;
+  font-size: 15px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.search-page #input-box > svg {
+  position: absolute;
+  top: 22px;
+}
+
+.search-page #input-box input[type="text"] {
+  padding: 0 30px;
+}
+
+.search-page #search-detail {
+  width: 100%;
+}
+
+.search-page #search-list {
+  width: 100%;
+}
+
+@media (min-width: 736px) {
+  .search-page #search-bar-box > #input-box {
+    max-width: 400px;
+    height: 37px;
+  }
+
+  .search-page #search-bar::placeholder {
+    font-size: 17px;
+  }
+
+  .search-page #input-box input[type="text"] {
+    font-size: 17px;
+  }
+  .search-page .search-mode-input {
+    height: 37px;
+  }
+
+  .search-page #input-box > svg {
+    position: absolute;
+    top: 24px;
+  }
+
+  .search-page #btn-standard > button {
+    font-family: "Roboto";
+    font-size: 18px;
+  }
+}

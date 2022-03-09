@@ -1,0 +1,113 @@
+$radius: 50px;
+
+.motion-detect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 320px;
+    height: 600px;
+    border-radius: 30px;
+  }
+
+  #exercise-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .back-btn {
+      width: 42px;
+    }
+
+    .exercise-title {
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+
+    .fail-btn {
+      border: none;
+      width: 45px;
+      height: 28px;
+      font-family: 'Noto Sans KR', sans-serif;
+      border-radius: 5px;
+      background: #e6e6e6;
+      box-shadow: inset 3px 3px 4px #9f9f9f,
+      inset -3px -3px 4px #ffffff;
+    }
+    
+    .success-btn {
+      border: none;
+      width: 45px;
+      height: 28px;
+      font-family: 'Noto Sans KR', sans-serif;
+      border-radius: 5px;
+      background: linear-gradient(225deg, #ffffff, #e4e4e4);
+      box-shadow:  -3px 3px 4px #a0a0a0,
+                   3px -3px 4px #ffffff;
+    }
+
+    #all-progress {
+      display: none;
+    }
+  }
+
+
+  
+  #canvas {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  #predict-value {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  progress {
+    margin-left: -30px;
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-progress-bar {
+    // background-color: #e7e7e7;
+    border-radius: 30px;
+    height: 25px;
+    width: 200px;
+    background: #f2f2f2;
+    box-shadow: inset -5px 5px 5px #d0d0d0,
+    inset 5px -5px 5px #ffffff;
+
+  }
+  ::-webkit-progress-value {
+    background-color: #42a4f5d2;
+    border-radius: 30px;
+    height: 25px;
+    transition: 0.2s;
+  }
+}
+
+
+@media (min-width: 736px) {
+  // .motion-detect {
+  //   #percent {
+  //     display: none;
+  //   }
+
+  //   #all-progress {
+  //     display: show;
+  //   }
+  // }
+}

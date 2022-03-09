@@ -1,0 +1,271 @@
+#profile-feed-comment {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CommentHeader */
+#profile-feed-comment > #comment-header {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#profile-feed-comment > #comment-header > .cancel {
+  height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#profile-feed-comment > #comment-header > .cancel > span {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#profile-feed-comment > #comment-header > .context {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* CommentMain */
+#profile-feed-comment > #comment-main {
+  width: 100%;
+  padding: 16px;
+  padding-bottom: 200px;
+  overflow: scroll;
+}
+
+/* FeedContent */
+#profile-feed-comment > #comment-main > .feed-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+}
+
+#profile-feed-comment > #comment-main > .feed-content > div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#profile-feed-comment > #comment-main > .feed-content > div > div {
+  display: flex;
+  align-items: center;
+}
+
+#profile-feed-comment
+  > #comment-main
+  > .feed-content
+  > div
+  > div:nth-child(1)
+  > div:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#profile-feed-comment
+  > #comment-main
+  > .feed-content
+  > div
+  > div:nth-child(1)
+  > div:nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#profile-feed-comment > #comment-main > .feed-content > div > div > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#profile-feed-comment > #comment-main > .feed-content > div > div:nth-child(2) {
+  margin: 5px 0 10px 50px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#profile-feed-comment > #comment-main > .feed-content > div > .tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0 15px 50px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(41, 98, 255, 0.6);
+}
+
+#profile-feed-comment > #comment-main > .feed-content > div > .tag > div {
+  padding: 2px 5px;
+}
+
+#profile-feed-comment > #comment-main > .feed-content > div > div:last-child {
+  margin-left: 50px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+#profile-feed-comment > #comment-main > .feed-comment {
+  /* display: flex;
+  flex-direction: column;
+  margin: 16px 0px; */
+}
+
+#profile-feed-comment > #comment-main > .feed-comment > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+
+  width: 100%;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+}
+
+#profile-feed-comment > #comment-main > .feed-comment > div > div {
+  display: flex;
+  align-items: center;
+}
+
+#profile-feed-comment
+  > #comment-main
+  > .feed-comment
+  > div
+  > div
+  > div:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+#profile-feed-comment
+  > #comment-main
+  > .feed-comment
+  > div
+  > div
+  > div:nth-child(1)
+  > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#profile-feed-comment
+  > #comment-main
+  > .feed-comment
+  > div
+  > div
+  > div:nth-child(2) {
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#profile-feed-comment > #comment-main > .feed-comment > div > div > span {
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 24px;
+}
+
+/* CommentRegister */
+#profile-feed-comment > #comment-register {
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 16px;
+}
+
+#profile-feed-comment > #comment-register > div {
+  padding: 10px;
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+}
+
+#profile-feed-comment > #comment-register > div > div {
+  align-items: center;
+  display: flex;
+}
+
+#profile-feed-comment > #comment-register > div > div > div:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#profile-feed-comment > #comment-register > div > div > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#profile-feed-comment > #comment-register > div > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  flex: 1 1 auto;
+}
+
+#profile-feed-comment > #comment-register > div > div > div > input {
+  /* width: 90%; */
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 30px;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  flex: 1 1 auto;
+  margin-right: 5px;
+}
+
+#profile-feed-comment > #comment-register > div > div > div > span {
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.38);
+  /* color: rgba(0, 0, 0, 0.87); */
+}
+
+/* 736px 이상일 경우 적용되는 코드 */
+@media (min-width: 736px) {
+  #profile-feed-comment > #comment-header {
+    margin-top: 10px;
+  }
+
+  #profile-feed-comment > #comment-main > .feed-comment > div {
+    margin: 20px 0px;
+  }
+}
+
+/* 1024px 이상일 경우 적용되는 코드 */
+@media (min-width: 1024px) {
+  #profile-feed-comment > #comment-register {
+    width: 1024px;
+  }
+}
